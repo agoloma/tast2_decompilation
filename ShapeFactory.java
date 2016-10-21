@@ -1,14 +1,16 @@
-// Decompiled by DJ v3.12.12.96 Copyright 2011 Atanas Neshkov  Date: 20.10.2016 19:31:39
-// Home Page: http://members.fortunecity.com/neshkov/dj.html  http://www.neshkov.com/dj.html - Check often for new version!
-// Decompiler options: packimports(3) 
-// Source File Name:   ShapeFactory.java
-
 import java.awt.*;
 import java.awt.geom.*;
 
+/**
+ * Factory for create shapes.
+ */
 public class ShapeFactory
 {
 
+    /**
+     * Factory method for creating object.
+     * @param shape_type type of int for choose type shape and border.
+     */
     public ShapeFactory(int shape_type)
     {
         width = 25;

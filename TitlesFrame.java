@@ -1,18 +1,22 @@
-// Decompiled by DJ v3.12.12.96 Copyright 2011 Atanas Neshkov  Date: 20.10.2016 19:31:39
-// Home Page: http://members.fortunecity.com/neshkov/dj.html  http://www.neshkov.com/dj.html - Check often for new version!
-// Decompiler options: packimports(3) 
-// Source File Name:   TitlesFrame.java
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
+
+/**
+ * Main class for initialise and create frame.
+ */
 public class TitlesFrame extends JFrame
 {
 
+    /**
+     * Constructor of class TitlesFrame.
+     */
     public TitlesFrame()
     {
         initUI();
     }
+
 
     private void initUI()
     {
@@ -23,6 +27,9 @@ public class TitlesFrame extends JFrame
         setLocationRelativeTo(null);
     }
 
+    /**
+     * Main method for start program.
+     */
     public static void main(String args[])
     {
         SwingUtilities.invokeLater(new Runnable() {

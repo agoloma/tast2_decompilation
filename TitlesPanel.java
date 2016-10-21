@@ -10,10 +10,16 @@ import java.awt.geom.AffineTransform;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+/**
+ * Class describe key parameters for create panel.
+ */
 public class TitlesPanel extends JPanel
     implements ActionListener
 {
 
+    /**
+     * Constructor create object TitlesPanel
+     */
     public TitlesPanel(int _shape)
     {
         start_angle = 0;
@@ -24,12 +30,16 @@ public class TitlesPanel extends JPanel
         animation.start();
     }
 
+    @Override
     public void actionPerformed(ActionEvent arg0)
     {
         if(is_done)
             repaint();
     }
 
+    /**
+     * Draw shapes in window.
+     */
     private void doDrawing(Graphics g)
     {
         is_done = false;
@@ -62,6 +72,7 @@ public class TitlesPanel extends JPanel
         is_done = true;
     }
 
+    @Override
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
